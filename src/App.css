@@ -92,10 +92,11 @@ hr {
 
 .notes-parent {
 	padding: 10px;
+	width: 100%;
 }
 .notes--container {
 	padding: 10px;
-	margin: auto;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
@@ -219,7 +220,8 @@ textarea:focus {
 }
 
 .red {
-	background-color: #e21717;
+	background-color: white;
+	border: 1px solid black;
 }
 
 .green {
@@ -268,4 +270,23 @@ textarea:focus {
 	bottom: 10px;
 	right: 20px;
 	z-index: 1;
+}
+
+.emptyNote {
+	display: block;
+	width: 60%;
+	height: 60%;
+	margin: 40px auto;
+}
+
+.empty--notes-title {
+	color: #1b98f5;
+	text-align: center;
+	/* font-weight: bolder; */
+}
+
+.add--border {
+	border: 3px solid #1b98f5;
+	border-radius: 100px;
+	padding: 2px;
 }

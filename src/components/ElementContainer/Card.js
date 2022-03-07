@@ -3,7 +3,13 @@ import deleteSVG from "../../images/delete.png";
 import edit from "../../images/edit.png";
 export default function Card(props) {
 	return (
-		<div className='card' style={{ width: "18rem" }}>
+		<div
+			className='card'
+			style={{
+				width: "18rem",
+				backgroundColor: `${props.color}`,
+				color: `${props.color !== "white" ? "white" : "black"}`,
+			}}>
 			<div className='card-body'>
 				<h5 className='card-title'>{props.title}</h5>
 				<hr style={{ backgroundColor: "grey" }} />
